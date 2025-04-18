@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FrameLayoutExample</string>
+    <string name="hello_frame_layout">Hello Frame Layout</string>
+</resources>

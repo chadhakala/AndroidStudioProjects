@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/instructionsTextView"
+        android:layout_width="318sp"
+        android:layout_height="45sp"
+        android:justificationMode="none"
+        android:text="@string/pick_an_object"
+        android:textAlignment="center"
+        android:textSize="32sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.129"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/playerTextView"
+        android:layout_width="140dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/player"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/computerTextView"
+        android:layout_width="140sp"
+        android:layout_height="25sp"
+        android:text="@string/computer"
+        android:textAlignment="textEnd"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/playerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/playerTextView"
+        tools:ignore="TextSizeCheck" />
+
+
+    <Button
+        android:id="@+id/paperButton"
+        android:layout_width="113sp"
+        android:layout_height="122sp"
+        android:layout_marginStart="140sp"
+        android:layout_marginBottom="52sp"
+        android:text="@string/paper"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/rockButton"
+        android:layout_width="117dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/rock"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/paperButton"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rpsWinTextView" />
+
+
+    <Button
+        android:id="@+id/scissorsButton"
+        android:layout_width="111dp"
+        android:layout_height="110dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/scissors"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.416"
+        app:layout_constraintStart_toEndOf="@+id/paperButton" />
+
+    <TextView
+        android:id="@+id/playerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="@string/_0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/playerTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/computerScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/computerTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/rpsWinTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="349dp"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/rockButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/replayButton"
+        android:layout_width="230dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="200dp"
+        android:text="@string/replay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/computerTextView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

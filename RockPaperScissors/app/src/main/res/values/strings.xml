@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">RockPaperScissors</string>
+    <string name="pick_an_object">Pick an object</string>
+    <string name="player">Player:</string>
+    <string name="computer">Computer:</string>
+    <string name="scissors">Scissors</string>
+    <string name="rock">Rock</string>
+    <string name="paper">Paper</string>
+    <string name="_0">0</string>
+    <string name="replay">Replay</string>
+</resources>
