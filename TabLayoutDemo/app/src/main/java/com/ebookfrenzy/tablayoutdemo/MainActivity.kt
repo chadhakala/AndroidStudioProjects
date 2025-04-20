@@ -10,15 +10,26 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import android.view.Menu
 import android.view.MenuItem
 import com.ebookfrenzy.tablayoutdemo.databinding.ActivityMainBinding
+import android.net.Uri
+import com.google.android.material.tabs.TabLayoutMediator
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(),
+    Tab1Fragment.OnFragmentInteractionListener,
+    Tab2Fragment.OnFragmentInteractionListener,
+    Tab3Fragment.OnFragmentInteractionListener
+    Tab4Fragment.OnFragmentInteractionListener{
 
-    private lateinit var appBarConfiguration: AppBarConfiguration
-    private lateinit var binding: ActivityMainBinding
+        override fun onCreate(savedInstanceState: Bundle?) {
+            private lateinit var appBarConfiguration: AppBarConfiguration
+            private lateinit var binding: ActivityMainBinding
+            super.onCreate(savedInstanceState)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+            configureTabLayout()
+        }
 
+    private fub configureTabLayout() {
+        repear(4) {
+            binding.tabLayout.addTab(binding.tabLayout.new)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 

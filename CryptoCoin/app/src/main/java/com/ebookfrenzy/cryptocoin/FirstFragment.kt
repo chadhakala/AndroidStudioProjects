@@ -64,7 +64,7 @@ class FirstFragment : Fragment() {
                         names.add(name)
 
                 }//end for
-                var adapter : ArrayAdapter<String> = ArrayAdapter(this.requireContext(), android.R.layout.simple_selectable_list_item, names)
+                val adapter : ArrayAdapter<String> = ArrayAdapter(this.requireContext(), android.R.layout.simple_selectable_list_item, names)
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                 binding.spinner.adapter = adapter
                 binding.spinner.onItemSelectedListener = object:
